@@ -1,0 +1,135 @@
+/* P {
+  background: blue;
+} */
+
+/* P {
+  color:black;
+} */
+
+/* .card > p {
+  /* color: #27A074; */
+
+  /* color: rgb(80, 135, 195); */
+
+  /* color: hsla(169, 100%, 50%, 1); */
+
+  /*
+  color:green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+} */
+
+p:focus, p:active, p:hover {
+  -webkit-text-fill-color: rgb(242, 255, 0);
+  -webkit-text-stroke: 1px rgb(0, 208, 255);
+
+  direction:rtl;
+}
+
+  /* #test {
+    -webkit-text-fill-color: initial;
+    -webkit-text-stroke: initial;
+  } */
+
+
+  /* .card {
+    color:red;
+  } */
+
+  /* #test {
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    -webkit-text-stroke: inherit;
+  } */
+
+  #test {
+    color: unset;
+    -webkit-text-fill-color: unset;
+    -webkit-text-stroke: unset;
+
+    /* writing-mode: vertical-rl; */
+    /* writing-mode: vertical-lr; */
+
+    /* text-align: center; */
+
+    text-align: justify;
+    /* letter-spacing:10px; */
+
+    letter-spacing:.3em;
+  }
+
+  span {
+    text-align:center;
+    text-transform:capitalize;
+    
+    text-transform:uppercase;
+    text-transform:lowercase;
+
+    /* text-decoration: underline dotted red; */
+    /* text-decoration: overline dotted red; */
+    /* text-decoration: line-through dotted red; */
+
+    /* text-decoration-color:rgb(255, 0, 166) */
+
+    text-decoration: underline solid rgb(0, 255, 140);
+  }
+
+    .span-b {
+      text-decoration-color:rgb(255, 0, 166);
+      text-decoration-style: dotted;
+    }
+
+    span:hover {
+      text-decoration-line: line-through;
+      text-decoration-color:rgb(0, 255, 72);
+      text-decoration-style: dotted;
+
+      text-decoration-style: double;
+
+      text-decoration-style: dashed;
+
+      text-decoration-style: wavy;
+      
+    }
+
+  /* pre { */
+    /* tab-size: 150px; */
+
+    /* tab-size:25;
+    letter-spacing:50%;
+  } */
+
+
+
+  /* =============================== */
+
+
+  * {
+    font-weight: 900;
+  }
+
+  span {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+    /* font-size: large; */
+
+    font-size: larger;
+/* 
+    font-weight: 900; */
+
+    
+    /* font-weight: bolder; */
+
+    font-weight: bolder;
+
+    font-style:italic;
+
+    font-display: swap;
+
+  }
+
+  .test {
+    font-weight: lighter;
+    font-style:oblique;
+  }
+

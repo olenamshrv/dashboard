@@ -1,7 +1,358 @@
+/* 
+
+.item {
+  color:aqua;
+}
+
+.item-first {
+  color:rgb(132, 132, 184);
+}
+
+.item:first-child {
+  color:blue;
+}
+
+.item:last-child {
+  color:rgb(255, 0, 183);
+}
+
+.item:only-child {
+  color:rgb(0, 255, 72);
+}
+
+.item:first-of-type {
+  color:rgb(128, 58, 0);
+}
+
+.item:last-of-type {
+  color:rgb(203, 143, 94)
+}
+
+.item:only-of-type {
+  background:#4687c3
+} */
+
+
+/* even 2, 4, odd 1, 3; 3n+1 (formula) */
+/* .item:nth-child(3n-2) {   
+  background: #0d3c69dd
+
+} */
+
+/* .item:nth-last-child(3n-2) {   
+  background: #0d3c69dd
+} */
+
+/* .item:nth-of-type(2n) {   
+  background: #0d3c69dd
+} */
+
+/* .item:nth-last-of-type(2n) {   
+  background: #0d3c69dd
+} */
+
+/* p:not(.item) {
+  background:#d5df1e
+} */
+
+/* .item:not(p) {
+  background:#b656b1
+}
+
+p:empty {
+  background:#8e0d65;
+  height: 10px;
+} */
+
+
+
+
+
+
+
+
+/* :root {
+  background: plum
+}
+
 html {
   max-width: 720px;
+
+  background:blue;
 }
 
 body {
   background: #fff;
 }
+
+* {
+  color: red;
+}
+
+h1 {
+  color:green;
+}
+
+h1 {
+  color:blue;
+}
+
+.box {
+  background: #dae3c5;
+}
+
+
+
+h1, h2#user, button.button#button {
+  color:rgb(255, 47, 172);
+}
+
+button.button {
+  background:#ffffff29;
+  color:rgb(127, 131, 255)
+}
+
+#user {
+  color:rgb(211, 135, 21);
+}
+
+div > p {
+  color:aqua;
+}
+
+#box > p {
+  color:rgb(76, 96, 170);
+}
+
+.box > p {
+  color:rgb(162, 0, 255);
+}
+
+footer > .class {
+  color:rgb(177, 255, 20);
+}
+
+footer > h1 {
+  color:darkslategray;
+}
+
+footer em {
+  color: #b79494;
+}
+
+footer em.child, footer div.child {
+  color:fuchsia
+}
+
+h1 + p {
+ color:red;
+ background:rgb(127, 131, 255)
+}
+
+h1 + em {
+  color:rgb(76, 0, 255);
+  background:rgb(127, 255, 136)
+ }
+
+ h1 + p, h1 + em {
+  color:rgb(41, 24, 138);
+  background:rgb(234, 240, 34)
+ }
+
+ h1 ~ p,
+ h1 ~ div > p {
+  background:darkorange;
+ }
+ 
+ h1 ~ p,
+ h1 ~ * > p {
+  background:darkorange;
+ }
+  */
+
+
+  .card-dark {
+    background: #423e3e38;
+  }
+
+   /*
+  .input-dark {
+    background: rgb(173, 176, 180);
+  }
+
+  .input-dark[required] {
+    background: rgb(244, 21, 21);
+  }
+
+  .input-dark-required {
+    background: rgb(244, 21, 21);
+  }
+
+  .input-dark[type="number"] {
+    background: rgb(21, 151, 244);
+  }
+
+  .small-img[alt~="small"] {
+    height:400px;
+  }
+
+  /* .card[class~="img"] {
+    width: 800px;
+  } */
+
+  /*
+  .card.img {
+    height: 800px;
+  }
+
+  .small-img[alt~="small"] {
+    height: 250px;
+  }
+
+  a[rel="external"] {
+    color: greenyellow;
+  }
+
+  button[class|="btn"] {
+    background: #a224d7
+  }
+
+  a[class^="btn"] {
+    background: #d5dd3b;
+  }
+
+  a[class*="btn"] {
+    background: #13b618;
+  }
+
+  a[class$="btn"] {
+    background: #1f9fb5;
+  }
+
+  .btn::first-letter {
+    color:red;
+  }
+
+  .big-text::first-line {
+    color:red;
+  }
+
+  .input-dark::placeholder{
+    color:green;
+    background:blue;
+  }
+
+  .before-after::before,
+  .before-after::after {
+    content: "$$$";
+    color:green;
+    background:#d5dd3b;
+  } */
+
+/* #test:target {
+  color:red;
+}
+
+.link:link {
+  color:red;
+}
+
+.link:hover {
+  color:green;
+} */
+
+/* .card:hover {
+  background:green;
+} */
+
+/* 
+.link:active {
+  color:purple;
+}
+
+.card:active {
+  background-color:purple;
+}
+
+input {
+  background-color: grey;
+}
+
+input:focus {
+  background-color:red;
+}
+
+.card:focus-within {
+  background:rgb(255, 0, 166);
+}
+
+.card:lang(en) {
+  background: #2bafaf;
+}
+
+.card:lang(fr) > span::after {
+  content: " (fr)";
+}
+
+button {
+  background-color:chartreuse;
+}
+
+button:enabled {
+  background-color:green;
+}
+
+button:disabled {
+  background-color:aquamarine;
+}
+
+.inp:read-write {
+  background-color:blue;
+}
+
+.inp:read-only {
+  background-color:rgb(0, 255, 60);
+}
+
+input[type="checkbox"] ~ span {
+  background:red;
+}
+
+input[type="checkbox"]:checked ~ span {
+  background:rgb(255, 0, 217);
+}
+
+.valid:valid {
+  background: yellow;
+}
+
+.valid:invalid {
+  background: rgb(123, 255, 0);
+}
+
+.valid:optional {
+  background: rgb(72, 148, 215);
+}
+
+.number:focus {
+  background: grey;
+}
+
+.number:out-of-range {
+  background:red;
+}
+
+.number:in-range {
+  background:rgb(0, 255, 34);
+}
+
+.number:invalid {
+  background:cadetblue;
+}
+
+input:placeholder-shown ~ span {
+  background: pink;
+} */
+
+
+
