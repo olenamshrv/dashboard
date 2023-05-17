@@ -10,6 +10,7 @@
 
 .header {
   padding:24px;
+  border-bottom: 1px solid #DEE2E6;
 }
 
 .logo {
@@ -60,6 +61,7 @@
 
 .footer {
   padding:24px 0;
+  border-top: 1px solid #DEE2E6;
 }
 .footer_copyright {
   font-size:14px;
@@ -81,6 +83,8 @@
   font-weight:500;
   margin-bottom:12px;
   text-align: center;
+  line-height: 10px;
+  line-height: 150%;
 }
 
 .hero_text {
@@ -89,6 +93,8 @@
   text-align:center;
   max-width:585px;
   margin: 0 auto;
+  line-height:150%;
+  line-height:1.5;
 }
 
 .plans_card:not(:last-of-type) {
@@ -114,6 +120,17 @@
 .card_price_duration {
   font-size:29px;
   color: hsba(208, 14%, 49%, 1);
+  vertical-align:baseline;
+  vertical-align:sub;
+  vertical-align:super;
+  vertical-align:top;
+  vertical-align:text-top;
+  vertical-align:middle;
+  vertical-align:bottom;
+  vertical-align:text-bottom;
+  vertical-align: 50%;
+  vertical-align:-50%;
+  vertical-align:70px;
 }
 
 .card_block {
@@ -139,4 +156,111 @@
   width: 100%;
   font-size:19px;
   padding:9px;
+}
+
+.card {
+  /* border: 1px solid red; */
+  /* border-left: 1px solid red;
+  border-top: 1px solid blue;
+  border-right: 1px solid green;
+  border-bottom: 1px solid yellow; */
+
+  /* border: 10px solid pink; */
+
+  /* border: medium solid pink; */
+
+  /* border: 10px dotted pink; */
+  border: 10px dashed pink;
+
+  border: 10px double pink;
+
+  border-bottom:none;
+
+  border-bottom: 10px solid rgb(255, 192, 247);
+
+  border-bottom-color:blueviolet;
+
+  border-bottom-width: 2px;
+
+  border-top: thin groove slateblue;
+
+  border-bottom: thick ridge lawngreen;
+
+  outline: thin dotted yellowgreen;
+
+  /* border-radius: 0; */
+  /* border-radius: 15px; */
+  border-radius: 15px 30px;
+
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 120px;
+
+  border-top-right-radius: 15%;
+
+  border-radius:50%;
+
+  /* box-shadow: 5px 2px 2px 2px rgb(67, 65, 133);
+
+  box-shadow: 0 0 0 2px rgb(67, 65, 133);
+  box-shadow: 0 0 5px 2px rgb(67, 65, 133);
+  box-shadow: 5px 5px 5px 2px rgba(67, 65, 133, 0.482); */
+}
+
+.card:hover {
+  outline:5px solid aqua;
+  outline-offset: 5px;
+  box-shadow: 5px 5px 5px 2px rgba(67, 65, 133, 0.482);
+  cursor:pointer;
+  cursor:not-allowed;
+  cursor:context-menu;
+  cursor: help;
+  cursor:progress;
+  cursor: wait;
+  cursor:no-drop;
+  cursor:crosshair;
+  cursor: cell;
+  cursor:text;
+  cursor:vertical-text;
+  cursor: alias;
+  cursor:copy;
+  cursor:move;
+  cursor:all-scroll;
+  cursor:col-resize;
+  cursor: row-resize;
+  cursor: n-resize;
+  cursor:ne-resize;
+  cursor: ns-resize;
+  cursor:e-resize;
+  cursor:ew-resize;
+  cursor:se-resize;
+  cursor:s-resize;
+  cursor:sw-resize;
+  cursor:w-resize;
+  cursor:nw-resize;
+  cursor:nesw-resize;
+  cursor:nwse-resize;
+  cursor: zoom-in;
+  cursor:zoom-out;
+  cursor:grab;
+  cursor:grabbing;
+  cursor:auto;
+
+}
+
+.btn {
+  border-radius:50%;
+  border-radius:25%;
+  border-radius:50px;
+}
+
+.btn:hover {
+  box-shadow: 5px 5px 5px 2px rgba(67, 65, 133, 0.482);
+}
+
+h1 {
+  text-shadow:-20px -20px 2px #ba1846;
+  text-shadow:50px -70px 0 #ba1846;
+  text-shadow:50px -70px 5px #ba1846;
+  text-shadow:0 0 10px #18ba20;
+  text-shadow:0 0 10px rgb(82, 7, 72);
 }
