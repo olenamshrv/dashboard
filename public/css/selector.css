@@ -59,8 +59,8 @@ p:focus, p:active, p:hover {
   }
 
   span {
-    text-align:center;
-    text-transform:capitalize;
+    /* text-align:center;
+    text-transform:capitalize; */
     
     text-transform:uppercase;
     text-transform:lowercase;
@@ -133,3 +133,52 @@ p:focus, p:active, p:hover {
     font-style:oblique;
   }
 
+
+  .test {
+    display: none;
+  }
+
+  .block {
+    display:block;
+    /* display:inline-block; */
+    background:rgb(198, 191, 191);
+    /* margin:10px; */
+    /* margin:50%; */
+    margin:auto;
+
+    /* margin-top: 10px;
+
+    margin-bottom:50px;
+
+    margin-right: 120px; */
+
+    /* width:250px; */
+    /* width: 150%; */
+    /* width: fit-content; */
+    /* width: min-content; */
+
+    /* width: min-content; */
+
+    /* min-width:fit-content; */
+
+    max-width:min-content;
+
+    min-width:10px;
+
+    max-width:100px;
+
+    /* height: min-content; */
+    /* height: auto; */
+
+    /* min-height:max-content; */
+
+    min-height: 100px;
+
+    max-height: 100px;
+
+    padding:15px;
+
+      box-sizing:content-box;
+
+  }
+  
