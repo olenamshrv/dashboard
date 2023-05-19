@@ -41,7 +41,7 @@ router.get('/template-1', function (req, res) {
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('template-1', {
-    layout: "template-1",
+    layout: 'template-1',
     page: {
       title: 'Example Page',
     },
@@ -60,8 +60,8 @@ router.get('/template-1', function (req, res) {
       },
     ],
     hero: {
-      title: 'Pricing',
-      text: "Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.",
+      title: 'Pri     cing',
+      text: "Quickly &shy; build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.",
     },
     plans: [
       {

@@ -85,16 +85,51 @@
   text-align: center;
   line-height: 10px;
   line-height: 150%;
+
+  max-width:660px;
+  margin: 0 auto;
+  margin-bottom:12px;
+  height:85px;
+  /* overflow:hidden; */
+  /* text-overflow: ellipsis; */
+  /* white-space:pre; */
+  white-space:nowrap;
+}
+
+.overflow {
+  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .hero_text {
-  color:hsba(210, 20%, 16%, 1);
+  /* color:hsba(210, 20%, 16%, 1);
   font-size:20px;
   text-align:center;
   max-width:585px;
   margin: 0 auto;
   line-height:150%;
-  line-height:1.5;
+  line-height:1.5; */
+  background:gray;
+  text-align:left;
+  max-width:250px;
+  /* width:min-content; */
+  width:200px;
+  /* word-break:break-all;
+  word-break:keep-all;
+  word-break:break-word; */
+hyphens:manual;
+
+overflow: auto;
+resize:both;
+resize:vertical;
+resize:horizontal;
+word-spacing:10px;
+
+  /* white-space:nowrap;
+  white-space:pre;
+  white-space:pre-wrap; */
+  /* white-space:break-spaces; */
+  /* white-space:pre-line; */
 }
 
 .plans_card:not(:last-of-type) {
@@ -170,7 +205,7 @@
   /* border: medium solid pink; */
 
   /* border: 10px dotted pink; */
-  border: 10px dashed pink;
+  /* border: 10px dashed pink;
 
   border: 10px double pink;
 
@@ -186,18 +221,18 @@
 
   border-bottom: thick ridge lawngreen;
 
-  outline: thin dotted yellowgreen;
+  outline: thin dotted yellowgreen; */
 
   /* border-radius: 0; */
   /* border-radius: 15px; */
-  border-radius: 15px 30px;
+  /* border-radius: 15px 30px;
 
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 120px;
 
   border-top-right-radius: 15%;
 
-  border-radius:50%;
+  border-radius:50%; */
 
   /* box-shadow: 5px 2px 2px 2px rgb(67, 65, 133);
 
@@ -246,21 +281,44 @@
   cursor:auto;
 
 }
-
+/* 
 .btn {
   border-radius:50%;
   border-radius:25%;
   border-radius:50px;
-}
+} */
 
 .btn:hover {
   box-shadow: 5px 5px 5px 2px rgba(67, 65, 133, 0.482);
 }
 
-h1 {
+/* h1 {
   text-shadow:-20px -20px 2px #ba1846;
   text-shadow:50px -70px 0 #ba1846;
   text-shadow:50px -70px 5px #ba1846;
   text-shadow:0 0 10px #18ba20;
   text-shadow:0 0 10px rgb(82, 7, 72);
-}
+} */
+
+/* .plans_card:nth-child(2) > .card {*/
+/* background:red; */
+/* display:none; */
+/* } */
+
+.plans_card:nth-child(2) {
+  /* background:red; */
+  /* display:none; */
+  visibility:hidden;
+  }
+
+  /* p {
+    background:gray;
+    width:150px;
+    height:100px;
+    /* overflow:hidden; */
+    /* overflow:scroll;
+    overflow:overlay;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    text-overflow:ellipsis; */
+  /*} */
