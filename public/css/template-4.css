@@ -1,0 +1,23 @@
+:root {
+    --color-white: #fff;
+}
+
+.page {
+    background: var(--color-white);
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.page_content {
+    font-family: "Roboto";
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.header {
+    display: flex;
+}
