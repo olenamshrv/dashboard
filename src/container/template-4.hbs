@@ -1,15 +1,49 @@
 <header class='header'>
-
+  {{>logoB}}
+  {{>nav4 list=header}}
 </header>
 
-<main class='main'>
-  main
-</main>
+{{#with main}}
+  <main class='main'>
+    <img class="main_image" src="{{image}}" alt="Main image">
+    <div class="main_info">
+      <h1 class="main_info_title">{{heading}}</h1>
+      <p class="main_info_description">{{description}}</p>
+      <a class="button main_button" href="{{href}}">{{button}}</a>
+    </div>
+  </main>
+{{/with}}
 
-<div class='featured'></div>
-featured
-<div class='actions'></div>
+<div class='featured'>
+  {{#each featured}}
+    <div class="featured_card">
+      <div class="featured_card_image" style="background-image: url({{photo}})"></div>
+      <h2 class="featured_card_title">{{heading}}</h2>
+      <p class="featured_card_info">{{info}}</p>
+      <a href="{{linkUrl}}" class="button featured_button">{{linkText}}</a>
+    </div>
+  {{/each}}
+</div>
+
+<div class='actions'>
+  {{#each actions}}
+    <div class="actions_card">
+      <h3 class="actions_card_title">{{heading}}</h3>
+      <a class="button actions_card_button" href="{{url}}">{{text}}</a>
+    </div>
+  {{/each}}
+</div>
 
 <footer class='footer'>
-  footer
+  <div class="footer_logo">
+    {{>logoB}}
+    <span class="footer_copyright">© 2023</span>
+  </div>
+
+  {{#each footer}}
+      <div class="footer_menu_item">
+        <h4 class="fotter_menu_title">{{title}}</h4>
+        {{>nav4 list=links isVertical=true}}
+      </div>
+  {{/each}}
 </footer>
