@@ -1,3 +1,32 @@
+@keyframes fly {
+  from {
+    top: 0;
+    left: 0;
+    background: red;
+  }
+
+  25% {
+    top: 500px;
+    left: 500px;
+    background: blue;
+    width: 100px;
+  }
+
+  50% {
+    left: 0;
+    background: yellow;
+    width: 0px;
+  }
+
+  to {
+    top: 0;
+    left: 0;
+    background: purple;
+    /* width: 100px; */
+  }
+}
+
+
 :root {
   --space-m: 12px;
   --space-xm: 16px;
@@ -108,7 +137,12 @@
   color: var(--color-primary);
   text-decoration: underline;
 
-  opacity: 20%;
+  /* opacity: 20%; */
+
+  /* transition-property: color;
+  transition-duration: 1s; */
+
+  transition: color 1s;
 }
 
 .footer {
@@ -208,6 +242,11 @@
   text-decoration: none;
   padding: var(--space-m) var(--space-xm);
   border-radius: var(--border-radius);
+
+  /* transition: opacity 1s, background-color 1s; */
+
+  transition-property: opacity, background-color, color;
+  transition-duration: 1s;
 }
 
 .card_button {
@@ -217,6 +256,8 @@
 
 .button:hover {
   opacity: 0.7;
+  background-color: yellow;
+  color: red;
 }
 
 .form {
@@ -317,10 +358,10 @@
 }
 
 .modal {
-  /* position: fixed; */
-  position: sticky;
-  top: 24px;
-  left: 400px;
+  position: fixed;
+  /* position: sticky; */
+  top: 200px;
+  left: 200px;
 
   /* height: 100px; */
   width: 600px;
@@ -331,7 +372,44 @@
   line-height: 150%;
 
   z-index: 2;
+
+  /* transition: top 1s; */
+
+  /* transition-property: top;
+  transition-duration: 3s;
+  transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+
+  transition-delay: 3s; */
+
+
+  animation-name: fly;
+  animation-duration: 4s;
+
+  animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-delay: 1s;
+
+  /* animation-iteration-count: infinite; */
+
+  animation-direction: reverse;
+  animation-direction: alternate;
+
+  animation-fill-mode: forwards;
+  animation-fill-mode: both;
+
 }
+
+body:hover .modal {
+  animation-play-state: paused;
+}
+
+/* body:hover .modal { */
+  /* top: 600px; */
+  /* animation-name: fly;
+  animation-duration: 4s;
+
+  animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-delay: 3s; */
+/* } */
 
 .modal_image {
   height: 600px;
