@@ -1,27 +1,34 @@
 <header class='header'>
         {{>logo}}
-        <nav class='header_link'>
-            <div class="header-nav-right">
-                {{>nav list=header}}
-            </div>
-        </nav>
-</header>
 
-{{#with hero}}
-    <div class="hero">
-        <div class="hero_content">
-            <h1 class="hero_title">{{title}}</h1>
-            <p class="hero_text">{{text}}</p>
-        </div>
-        <img src="{{photo}}" alt="Hero image" class="hero_image">
+    {{#with hero}}
+      <div class="hero">
+          <div class="hero_content">
+              <h1 class="hero_title">{{title}}</h1>
+              <p class="hero_text">{{text}}</p>
+          </div>
+          <div class="hero_slider">
+              <div class="hero_slider_icon hero_slider_left">{{left}}</div>
+               <img src="{{photo}}" alt="Hero image" class="hero_image">
+               <div class="hero_slider_icon hero_slider_right">{{right}}</div>
+          </div>
+          <img src="{{photo}}" alt="Hero image" class="hero_image">
+      </div>
+    {{/with}}
+
+    <input type="text" class="input">
+
+    <div class="modal">
+        {{hero.text}} {{hero.text}}
+        {{!-- <img src="{{hero.photo}}" alt="Hero image" class="modal_image"> --}}
+        <div class="modal_text">{{hero.text}}</div>
     </div>
-{{/with}}
 
-<main class="blog">
-    {{#each blog}}
-        {{>cardBlog data=this}}
-    {{/each}}
-</main>
+    <main class="blog">
+        {{#each blog}}
+            {{>cardBlog data=this}}
+        {{/each}}
+    </main>
 
 {{#with form}}
     <div class="form">
@@ -35,13 +42,14 @@
     </div>
 {{/with}}
 
-<footer class="footer">
-    <div>
-        {{>logo}}
-        <span class="footer_copyright">
-            Copyright 2023-2024
-        </span>
-    </div>
+
+  <footer class="footer" id="test">
+        <div>
+            {{>logo}}
+            <span class="footer_copyright">
+                Copyright 2023-2024
+            </span>
+        </div>
 
     {{#each footer}}
         <div class="col-3">
