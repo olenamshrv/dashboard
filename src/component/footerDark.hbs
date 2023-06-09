@@ -1,0 +1,14 @@
+<footer class='footer_dark'>
+  {{#with data}}
+    <div class='footer_dark_nav'>
+      <div class='nav_dark footer_nav_dark'>
+        {{#each pages}}
+          <a href='{{path}}' class='nav_item'>{{name}}</a>
+        {{/each}}
+      </div>
+    </div>
+    <div class='footer_copyright'>
+      {{copyright}}
+    </div>
+  {{/with}}
+</footer>

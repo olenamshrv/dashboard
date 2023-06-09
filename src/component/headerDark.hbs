@@ -1,0 +1,30 @@
+<header class='header_dark'>
+  {{#with data}}
+    <div class='header_nav'>
+      <div class='logo_dark'>
+        <span>{{brandName}}</span>
+      </div>
+      <div class='nav_dark header_nav_dark'>
+        {{#each links}}
+          <a href='{{url}}' class='nav_item'>{{text}}</a>
+        {{/each}}
+      </div>
+    </div>
+    <div class='ad'>
+      <div class='ad_description'>
+        <div class='ad_image'>
+          <span>Ad</span>
+        </div>
+        <div class='ad_text ad_text_info'>
+          <span>{{ad.text}}:</span>
+          <pre> </pre>
+          <a href='{{ad.url}}' class='ad_text add_url'>
+            {{ad.url}}</a>
+        </div>
+      </div>
+      <div class='ad_text ad_userOnline'>
+        <span>Users online: {{userOnline}}</span>
+      </div>
+    </div>
+  {{/with}}
+</header>
