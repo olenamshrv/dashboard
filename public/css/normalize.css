@@ -1,4 +1,7 @@
 
+/* @layer normalize, main, component, style; */
+
+@layer normalize {
 
 /* Document
    ========================================================================== */
@@ -942,3 +945,5 @@ input:-webkit-autofill {
 /* h1, p {
   margin: 0 !important;
 } */
+
+}
