@@ -1,10 +1,6 @@
-
 /* @layer normalize, main, component, style; */
 
 @layer normalize {
-
-/* Document
-   ========================================================================== */
 
 /**
  * 1. Correct the line height in all browsers.
@@ -78,9 +74,9 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 
-a {
+/* a {
     background-color: transparent;
-}
+} */
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -595,11 +591,13 @@ ul,
 var,
 video {
   margin: 0;
-  padding: 0;
-  border: 0;
+
+  /* padding: 0; */
+  /* border: 0; */
   /* font-size: 100%; */
+
   /* font: inherit; */
-  vertical-align: baseline;
+  /* vertical-align: baseline; */
 }
 
 :focus {
@@ -616,9 +614,9 @@ header,
 hgroup,
 menu,
 nav,
-section {
+/* section {
   display: block;
-}
+} */
 
 body {
   line-height: 1;
