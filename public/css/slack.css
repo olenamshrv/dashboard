@@ -69,7 +69,7 @@
     .icon_arrow {
         height: 14px;
         width: 24px;
-        background-image: url('');
+        /* background-image: url(''); */
     }
 }
 
@@ -122,11 +122,8 @@ body {
 
     .page_content {
         width: 100%;
-
         padding: var(--spacing-3);
     }
-
-
 
     .hero_section {
         display: flex;
