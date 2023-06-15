@@ -627,18 +627,18 @@ ul {
   list-style: none;
 }
 
-blockquote,
+/* blockquote,
 q {
   quotes: none;
-}
+} */
 
-blockquote:after,
+/* blockquote:after,
 blockquote:before,
 q:after,
 q:before {
   content: '';
   content: none;
-}
+} */
 
 table {
   border-collapse: collapse;
